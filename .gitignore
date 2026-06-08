@@ -1,0 +1,54 @@
+# Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local SDK paths
+local.properties
+
+# Native build outputs
+.cxx/
+.externalNativeBuild/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keystores
+*.jks
+*.keystore
+
+# Android generated
+captures/
+
+# Kotlin
+.kotlin/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Model artifacts
+*.pte
+*.etrecord
+# *.onnx
+*.tflite
+*.qnn
+*.dlc
+# *.bin
+*.safetensors
+
+# Native libraries
+*.so
