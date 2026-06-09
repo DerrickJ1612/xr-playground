@@ -4,6 +4,8 @@
 
 Create the runtime directory and push the required QNN libraries:
 
+QAIRT Version: v2.46.0.260424121129
+
 ```bash
 adb shell mkdir -p /data/local/tmp/qnn
 
