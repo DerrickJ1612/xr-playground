@@ -67,7 +67,7 @@ cd /data/local/tmp/qnn/examples
 Grant camera permissions and launch the application:
 
 ```bash
-adb shell pm grant com.example.singleframeinference android.permission.CAMERA
-adb shell am force-stop com.example.singleframeinference
-adb shell monkey -p com.example.singleframeinference 1
+adb shell pm grant com.example.xrobjectclassifier android.permission.CAMERA
+adb shell am force-stop com.example.xrobjectclassifier
+adb shell monkey -p com.example.xrobjectclassifier 1
 ```
