@@ -43,12 +43,25 @@ venv/
 # Model artifacts
 *.pte
 *.etrecord
-# *.onnx
+*.onnx
+*.onnx.data
 *.tflite
 *.qnn
 *.dlc
-# *.bin
+*.bin
 *.safetensors
 
 # Native libraries
 *.so
+
+# Compiled app artifacts
+*.apk
+*.zip
+
+# QNN runtime binaries (obtain from QAIRT SDK)
+qnn-net-run
+
+# Inference output directories
+**/output/
+
+

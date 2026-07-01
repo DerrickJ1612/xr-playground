@@ -1,4 +1,4 @@
-# Single Frame Inference
+# Inference Validation
 
 ## Runtime Setup
 
@@ -13,7 +13,6 @@ adb push lib/aarch64-android/libQnnHtp.so /data/local/tmp/qnn
 adb push lib/aarch64-android/libQnnSystem.so /data/local/tmp/qnn
 adb push lib/aarch64-android/libQnnHtpPrepare.so /data/local/tmp/qnn
 adb push lib/aarch64-android/libQnnHtpV79Stub.so /data/local/tmp/qnn
-adb push lib/aarch64-android/libQnnTFLiteDelegate.so /data/local/tmp/qnn
 adb push lib/hexagon-v79/unsigned/libQnnHtpV79Skel.so /data/local/tmp/qnn
 adb push bin/aarch64-android/qnn-net-run /data/local/tmp/qnn
 ```
