@@ -89,6 +89,6 @@ This repository is intended to provide progressively more advanced XR labs that 
 - Camera integration with CameraX
 - AI model deployment
 - Qualcomm AI Engine acceleration
-- Future ExecuTorch and LiteRT integration
+- Future ExecuTorch, LiteRT, Unity integration
 
 ---
