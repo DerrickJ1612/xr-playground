@@ -6,7 +6,7 @@ A collection of hands-on Android XR labs demonstrating application bring-up, cam
 
 ## Supported Hardware
 
-- XREAL AI glasses (or a compatible device with SXR2330P / Hexagon HTP v79)
+- XREAL Aura glasses (or a compatible device with SXR2330P / Hexagon HTP v79)
 
 ## Development Environment
 
