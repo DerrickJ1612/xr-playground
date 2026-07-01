@@ -1,14 +1,15 @@
-# xr-playground
+# xr-labs-for-snapdragon
 
-A collection of Android XR development examples. 
-
-Projects progress from a basic dual-screen hello-world to real-time on-device ML inference via the Qualcomm AI Engine.
+A collection of hands-on Android XR labs demonstrating application bring-up, camera integration, and on-device AI inference on Snapdragon-powered XR devices.
 
 ---
 
-## Hardware and Prerequisites
+## Supported Hardware
 
 - XREAL AI glasses (or a compatible device with SXR2330P / Hexagon HTP v79)
+
+## Development Environment
+
 - Android Studio Canary build
 - QAIRT SDK — see `docs/` for model compilation instructions; models were produced with v2.46.0.260424
 - [Android Platform Tools](https://developer.android.com/tools/releases/platform-tools) (ADB, for sideloading and runtime setup)
@@ -17,30 +18,30 @@ Projects progress from a basic dual-screen hello-world to real-time on-device ML
 
 ## Projects
 
-| # | Project | Description |
-|---|---------|-------------|
-| 01 | [Hello XR World](xreal/01_hello_world/) | Dual-activity starter |
-| 02 | [Camera Preview](xreal/02_camera_preview/) | Streams the glasses camera to a CameraX `PreviewView` |
-| 03 | [Image Analysis](xreal/03_image_analysis/) | Attaches a `CameraX ImageAnalysis` use case; logs frame resolution, format, and rotation |
-| 04 | [Object Classification](xreal/04_object_classification/) | Real-time MobileNetV2 classification (QNN HTP, 1000 ImageNet classes) displayed on the glasses |
+| # | Project | AI | Description |
+|---|---------|-----|-------------|
+| 01 | [Hello XR World](xreal/01_hello_world/) |--| Dual-activity starter |
+| 02 | [Camera Preview](xreal/02_camera_preview/) |--| Streams the glasses camera to a CameraX `PreviewView` |
+| 03 | [Image Analysis](xreal/03_image_analysis/) |--| Attaches a `CameraX ImageAnalysis` use case; logs frame resolution, format, and rotation |
+| 04 | [Object Classification](xreal/04_object_classification/) | qairt | Real-time MobileNetV2 classification (QNN HTP, 1000 ImageNet classes) displayed on the glasses |
 
 Each project directory contains a README with ADB launch commands.
 
 ---
 
-## Inference Path Status
+## Supported AI Runtimes
 
-| Runtime | Status | Notes |
-|---------|--------|-------|
-| Qualcomm QAIRT / QNN | Validated | MobileNetV2 classification running on HTP v79 (project 04) |
-| ExecuTorch (QNN delegate) | In progress | SSD300-VGG16 model exported to `.pte`; Android integration not yet built |
-| LiteRT (TFLite) | Not started | — |
+| Runtime | Status |
+|---------|--------|
+| Qualcomm QAIRT | Project 04|
+| ExecuTorch | In progress |
+| LiteRT | Planned |
 
 ---
 
 ## Models
 
-Compiled model artifacts are not checked in. Build them from the instructions in
+Compiled model artifacts are intentionally excluded from source and must be generated locally.
 `docs/XR_Aura_Development_Guide.docx` and place them in `xreal/models/`.
 
 | File | Format | Expected path |
@@ -77,5 +78,17 @@ xreal/
 ├── models/                   Labels and model docs; compiled binaries are gitignored
 └── docs/                     XR Aura Development Guide
 ```
+
+---
+
+## Goals
+
+This repository is intended to provide progressively more advanced XR labs that demonstrate:
+
+- Android XR application development
+- Camera integration with CameraX
+- AI model deployment
+- Qualcomm AI Engine acceleration
+- Future ExecuTorch and LiteRT integration
 
 ---
